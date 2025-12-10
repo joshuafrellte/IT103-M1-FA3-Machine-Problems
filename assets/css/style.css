@@ -1,0 +1,41 @@
+* {
+    font-family: monospace, Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 10px;
+    padding: 0;
+
+}
+
+button, input {
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+h1, h2, header, section, p {
+    background-color: rgb(169, 206, 207);
+}
+
+p {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+header, section {
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.50);
+}
+
+header {
+    padding: 10px;
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+}
+
+/* 
+    Author: Joshua Frell Te 
+*/
