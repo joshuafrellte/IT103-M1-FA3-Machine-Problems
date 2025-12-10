@@ -6,8 +6,7 @@ countBtn.addEventListener('click', function() {
     const string = stringInput4.value.trim()
     const length = string.length
 
-    console.log(length)
-
+    resultLabel4.style.display = "block"
     resultLabel4.textContent = `Count: ${length}`
 })
 

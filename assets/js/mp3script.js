@@ -9,6 +9,7 @@ replaceBtn.addEventListener('click', function() {
     const substring = substringInput3.value
     const replacement = replaceInput.value
 
+    resultLabel3.style.display = "block"
     resultLabel.textContent = string.includes(substring) ? 
                             string.replace(substring, replacement) : 
                             "Substring not found!"

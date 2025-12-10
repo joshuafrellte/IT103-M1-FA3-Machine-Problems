@@ -7,6 +7,7 @@ searchBtn.addEventListener('click', function() {
     string = stringInput2.value
     substring = substringInput2.value
 
+    resultLabel2.style.display = "block"
     resultLabel2.textContent = 
         string.includes(substring) ? "Found!" : "Not Found :("
 })

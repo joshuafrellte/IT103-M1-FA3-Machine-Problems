@@ -3,73 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Part2A Demo by Clyde Balaman</title>
+    <title>Machine Problems</title>
     <link rel="stylesheet" href="assets/css/style.css"> <!-- Link to external CSS file -->
 </head>
 <body> 
-    <header>
-        <h1>M1|FA3 - Machine Problems by Joshua Frell Te</h1>
-        <hr>
-    </header>
+    <div id="grid-container">
+        <header style="grid-area: head">
+            <h1>M1|FA3 - Machine Problems by Joshua Frell Te</h1>
+            <hr>
+        </header>
 
-    <section>
-        <h2>[1] ReplaceAll</h2>
+        <section style="grid-area: mp1">
+            <h2>[1] ReplaceAll</h2>
 
-        <input id="stringInput1" type="text" placeholder="String">
-        
-        <button id="removeSpaceBtn">Remove Spaces</button>
+            <div class="flex-container">
+                <input id="stringInput1" type="text" placeholder="String">
+                
+                <button id="removeSpaceBtn">Remove Spaces</button>
+            </div>
 
-        <p id="resultLabel1"></p>
+            <p id="resultLabel1" style="display: none"></p>
 
-        <hr>
-    </section>
+            <hr>
+        </section>
 
-    <section>
-        <h2>[2] SearchWord</h2>
+        <section style="grid-area: mp2">
+            <h2>[2] SearchWord</h2>
 
-        <input id="stringInput2" type="text" placeholder="Main String">
-        <input id="substringInput2" type="text" placeholder="Substring">
-        
-        <button id="searchBtn">Search Word</button>
+            <div class="flex-container">
+                <input id="stringInput2" type="text" placeholder="Main String">
+                <input id="substringInput2" type="text" placeholder="Substring">
+                
+                <button id="searchBtn">Search Word</button>
+            </div>
 
-        <p id="resultLabel2"></p>
+            <p id="resultLabel2" style="display: none"></p>
 
-        <hr>
-    </section>
+            <hr>
+        </section>
 
-    <section>
-        <h2>[3] ReplaceWord</h2>
+        <section style="grid-area: mp3">
+            <h2>[3] ReplaceWord</h2>
 
-        <input id="stringInput3" type="text" placeholder="String">
-        <input id="substringInput3" type="text" placeholder="Substring">
-        <input id="replaceInput" type="text" placeholder="Replacement">
-        
-        <button id="replaceBtn">Replace Substring</button>
+            <div class="flex-container">
+                <input id="stringInput3" type="text" placeholder="String">
+                <input id="substringInput3" type="text" placeholder="Substring">
+                <input id="replaceInput" type="text" placeholder="Replacement">
+                
+                <button id="replaceBtn">Replace Substring</button>
+            </div>
 
-        <p id="resultLabel3"></p>
+            <p id="resultLabel3" style="display: none"></p>
 
-        <hr>
-    </section>
+            <hr>
+        </section>
 
-    <section>
-        <h2>[4] CountCharacters</h2>
+        <section style="grid-area: mp4">
+            <h2>[4] CountCharacters</h2>
 
-        <input id="stringInput4" type="text" placeholder="String">
-        <button id="countBtn">Count Characters</button>
+            <div class="flex-container">
+                <input id="stringInput4" type="text" placeholder="String">
+                <button id="countBtn">Count Characters</button>
+            </div>
 
-        <p id="resultLabel4"></p>
+            <p id="resultLabel4" style="display: none"></p>
+            
+            <hr>
+        </section>
 
-        <hr>
-    </section>
+        <section style="grid-area: mp5">
+            <h2>[5] EmailCheck</h2>
 
-    <section>
-        <h2>[5] EmailCheck</h2>
+            <div class="flex-container">
+                <input id="emailInput" type="email" placeholder="Email">
+                <button id="checkBtn">Check</button>
+            </div>
 
-        <input id="emailInput" type="email" placeholder="Email">
-        <button id="checkBtn">Check</button>
+            <p id="resultLabel5" style="display: none"></p>
 
-        <p id="resultLabel5"></p>
-    </section>
+            <hr>
+        </section>
+    </div>
 
     <script src="assets/js/mp1script.js"></script>
     <script src="assets/js/mp2script.js"></script>

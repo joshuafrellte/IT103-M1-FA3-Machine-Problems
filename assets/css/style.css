@@ -1,30 +1,79 @@
-* {
-    font-family: monospace, Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 10px;
-    padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&display=swap');
 
+* {
+    font-family: "Bitcount Prop Single", monospace, Arial, sans-serif;
+    padding: 0;
+    transition: 0.15s ease;
 }
 
 button, input {
-    font-size: 16px;
+    font-size: 18px;
+    margin: 10px;
+    padding: 8px 20px;
+    border-radius: 225px;
+}
+
+input:focus {
+    outline: 2px solid rgb(248, 52, 255);
+}
+
+button {
+    background-color: #c500ab;
+    color: white;
+    width: 200px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff00dd;
+    outline: 2px solid rgb(255, 163, 232);
+    box-shadow: 0 0 8px rgb(247, 0, 255);
+}
+
+button:active {
+    background-color: #d800bc;
+    transform: scale(0.95)
+}
+
+body {
     padding: 10px;
-    border-radius: 7px;
+    margin: 0;
+    background-color: rgb(49, 23, 78);
 }
 
-h1, h2, header, section, p {
-    background-color: rgb(169, 206, 207);
-}
-
-p {
-    font-weight: bolder;
+h1 {
     font-size: 20px;
 }
 
+h1, h2, header, section, p {
+    background-color: rgb(62, 12, 53);
+    color: white;
+}
+
+h2 {
+    margin-top: 5px;;
+    font-size: 20px;
+    text-align: center;
+}
+
+p {
+    color: rgb(255, 85, 232);
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+}
+
 header, section {
-    border: 1px solid black;
+    border: 3px solid rgb(244, 0, 216);
     border-radius: 15px;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.50);
+    box-shadow: 0px 0px 12px rgb(247, 0, 255);
+    margin: 10px 20px;
+}
+
+header:hover, section:hover {
+    border-color: rgb(255, 107, 238);
+    box-shadow: 0px 0px 24px rgb(247, 0, 255)
 }
 
 header {
@@ -33,9 +82,28 @@ header {
 }
 
 section {
-    padding: 20px;
+    padding: 20px 36px;
 }
 
 /* 
     Author: Joshua Frell Te 
 */
+
+@media screen and (min-width: 800px) {
+    h1 {
+        font-size: 32px;
+    }
+    #grid-container {
+        display: grid;
+        grid-template-areas:
+        'head head'
+        'mp1 mp4'
+        'mp2 mp5'
+        'mp3 mp3'
+    }
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
